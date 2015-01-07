@@ -1,0 +1,5 @@
+creat /first/second/newfile2
+mkdir /first/second/third
+mkdir /first/second
+creat /first/newfile
+mkdir /first

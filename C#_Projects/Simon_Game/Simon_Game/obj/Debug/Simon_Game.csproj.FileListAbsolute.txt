@@ -1,0 +1,9 @@
+c:\users\james\documents\visual studio 2013\Projects\Simon_Game\Simon_Game\bin\Debug\Simon_Game.exe.config
+c:\users\james\documents\visual studio 2013\Projects\Simon_Game\Simon_Game\bin\Debug\Simon_Game.exe
+c:\users\james\documents\visual studio 2013\Projects\Simon_Game\Simon_Game\bin\Debug\Simon_Game.pdb
+c:\users\james\documents\visual studio 2013\Projects\Simon_Game\Simon_Game\obj\Debug\Simon_Game.csprojResolveAssemblyReference.cache
+c:\users\james\documents\visual studio 2013\Projects\Simon_Game\Simon_Game\obj\Debug\Simon_Game.Form1.resources
+c:\users\james\documents\visual studio 2013\Projects\Simon_Game\Simon_Game\obj\Debug\Simon_Game.Properties.Resources.resources
+c:\users\james\documents\visual studio 2013\Projects\Simon_Game\Simon_Game\obj\Debug\Simon_Game.csproj.GenerateResource.Cache
+c:\users\james\documents\visual studio 2013\Projects\Simon_Game\Simon_Game\obj\Debug\Simon_Game.exe
+c:\users\james\documents\visual studio 2013\Projects\Simon_Game\Simon_Game\obj\Debug\Simon_Game.pdb

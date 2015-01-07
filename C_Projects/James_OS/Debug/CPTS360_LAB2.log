@@ -1,0 +1,352 @@
+﻿Build started 1/7/2015 3:09:36 PM.
+     1>Project "C:\Users\James\Desktop\CS\Programming Projects\James_OS\CPTS360_LAB2\CPTS360_LAB2.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt cd.c creat.c load.c ls.c mkdir.c rm.c rmdir.c save.c
+         save.c
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\header.h(9): warning C4005: 'NULL' : macro redefinition
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(120) : see previous definition of 'NULL'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(26): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(39): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(41): warning C4013: 'toupper' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(41): warning C4047: 'function' : 'const char *' differs in levels of indirection from 'int'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(41): warning C4024: 'strcat' : different types for formal and actual parameter 2
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(41): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(48): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(50): warning C4013: 'tolower' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(50): warning C4047: 'function' : 'const char *' differs in levels of indirection from 'int'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(50): warning C4024: 'strcat' : different types for formal and actual parameter 2
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(50): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(63): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(64): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(67): warning C4013: 'rmdir' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(78): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(79): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(82): warning C4013: 'rm' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(9): warning C4101: 'tempSTR' : unreferenced local variable
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(7): warning C4101: 'lineBUFFER2' : unreferenced local variable
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\save.c(7): warning C4101: 'lineBUFFER' : unreferenced local variable
+         rmdir.c
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\header.h(9): warning C4005: 'NULL' : macro redefinition
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(120) : see previous definition of 'NULL'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(16): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(17): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(18): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(19): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(21): warning C4013: 'determineDepth' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(25): warning C4013: 'getName3' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(56): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(62): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(89): warning C4013: 'getName' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(93): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(94): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(126): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(132): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(160): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(163): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(240): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(246): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(275): warning C4013: 'getName2' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(278): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(279): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(315): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(321): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(349): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(352): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(429): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rmdir.c(435): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+         rm.c
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\header.h(9): warning C4005: 'NULL' : macro redefinition
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(120) : see previous definition of 'NULL'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(16): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(17): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(18): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(19): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(21): warning C4013: 'determineDepth' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(25): warning C4013: 'getName3' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(56): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(62): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(82): warning C4013: 'getName' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(86): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(87): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(112): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(118): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(139): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(142): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(212): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(218): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(240): warning C4013: 'getName2' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(243): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(244): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(273): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(279): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(300): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(303): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(373): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\rm.c(379): warning C4133: 'function' : incompatible types - from 'node *' to 'const char *'
+         mkdir.c
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\header.h(9): warning C4005: 'NULL' : macro redefinition
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(120) : see previous definition of 'NULL'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(18): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(19): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(20): warning C4013: 'determineDepth' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(31): warning C4013: 'getName' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(32): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(36): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(42): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(63): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(95): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(143): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(162): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(196): warning C4013: 'getName2' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(197): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(201): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(207): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(228): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(260): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(308): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(327): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(361): warning C4013: 'getName3' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(362): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(366): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(372): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\mkdir.c(393): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+         ls.c
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\header.h(9): warning C4005: 'NULL' : macro redefinition
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(120) : see previous definition of 'NULL'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\ls.c(16): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\ls.c(17): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\ls.c(18): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\ls.c(19): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\ls.c(21): warning C4013: 'determineDepth' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\ls.c(58): warning C4013: 'getName3' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\ls.c(155): warning C4013: 'getName' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\ls.c(159): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\ls.c(160): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\ls.c(253): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\ls.c(256): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\ls.c(392): warning C4013: 'getName2' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\ls.c(395): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\ls.c(396): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\ls.c(489): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\ls.c(492): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+         load.c
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\header.h(9): warning C4005: 'NULL' : macro redefinition
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(120) : see previous definition of 'NULL'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\load.c(15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\load.c(26): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\load.c(35): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\load.c(50): warning C4013: 'mkdir' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\load.c(54): warning C4013: 'creat' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\load.c(10): warning C4101: 'newLine' : unreferenced local variable
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\load.c(9): warning C4101: 'lineBUFFER2' : unreferenced local variable
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\load.c(10): warning C4101: 'commandInput' : unreferenced local variable
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\load.c(10): warning C4101: 'commandInput2' : unreferenced local variable
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\load.c(10): warning C4101: 'pathInput' : unreferenced local variable
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\load.c(9): warning C4101: 'lineBUFFER' : unreferenced local variable
+         creat.c
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\header.h(9): warning C4005: 'NULL' : macro redefinition
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(120) : see previous definition of 'NULL'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(18): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(19): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(20): warning C4013: 'determineDepth' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(31): warning C4013: 'getName' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(32): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(36): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(42): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(63): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(95): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(145): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(164): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(198): warning C4013: 'getName2' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(199): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(203): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(209): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(230): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(262): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(310): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(329): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(363): warning C4013: 'getName3' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(364): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(368): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(374): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(395): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\creat.c(8): warning C4101: 'testSTR' : unreferenced local variable
+         cd.c
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\header.h(9): warning C4005: 'NULL' : macro redefinition
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(120) : see previous definition of 'NULL'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(16): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(17): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(18): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(19): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(21): warning C4013: 'determineDepth' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(22): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(23): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(24): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(43): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(48): warning C4013: 'getName3' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(62): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(64): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(79): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(81): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(95): warning C4013: 'getName' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(99): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(100): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(111): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(126): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(140): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(143): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(199): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(210): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(225): warning C4013: 'getName2' undefined; assuming extern returning int
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(228): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(229): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(240): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(244): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(261): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(263): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(277): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(280): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(204) : see declaration of 'strtok'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(336): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(340): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(353): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>c:\users\james\desktop\cs\programming projects\james_os\cpts360_lab2\cd.c(355): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\James\Desktop\CS\Programming Projects\James_OS\CPTS360_LAB2\Debug\CPTS360_LAB2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\James\Desktop\CS\Programming Projects\James_OS\CPTS360_LAB2\Debug\CPTS360_LAB2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\James\Desktop\CS\Programming Projects\James_OS\CPTS360_LAB2\Debug\CPTS360_LAB2.lib" /MACHINE:X86 /SAFESEH Debug\cd.obj
+         Debug\creat.obj
+         Debug\load.obj
+         Debug\ls.obj
+         Debug\main.obj
+         Debug\mkdir.obj
+         Debug\rm.obj
+         Debug\rmdir.obj
+         Debug\save.obj
+     1>cd.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+         CPTS360_LAB2.vcxproj -> C:\Users\James\Desktop\CS\Programming Projects\James_OS\CPTS360_LAB2\Debug\CPTS360_LAB2.exe
+     1>Done Building Project "C:\Users\James\Desktop\CS\Programming Projects\James_OS\CPTS360_LAB2\CPTS360_LAB2.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.60
