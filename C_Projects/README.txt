@@ -1,3 +1,5 @@
+DISCLAIMER: Please keep in mind this is one of my first major C projects that I ever created. It is not the most efficient or the most documented program. It is simply meant to be a demonstration of my knowledge of C.
+
 This is a virtual file system that I created using C language.
 type 'menu' for list of commands.
 Commands:
