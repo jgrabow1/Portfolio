@@ -1,0 +1,202 @@
+﻿@using sample.Models
+@model AllClasses
+@{
+    /*
+     * @model List<Person> is telling Razor to expect a List of People to be passed in as the
+     * file's model (Accessible elsewhere through "Model").
+     * */
+    
+    //We haven't gotten to layout pages yet, but when we do, we'll need to change this.
+    //For now, just set to NULL.
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Blog</title>
+</head>
+<body>
+
+    <!--Title-->
+    <h3 style="text-align:center;">Blog Page Of - @Model.p.Email</h3>
+
+
+    <!--User Info-->
+    <div>
+        <table border="1">
+            <tr>
+                <td>
+                    <b>User Info</b><br>
+                    User Name : @Model.p.FirstName<br>
+                    Validated : @Model.p.CanWriteArticles<br>
+                    Admin : @Model.p.IsAdmin<br>
+                    ID : @Model.p.Id<br>
+                    @Html.ActionLink("Logout", "Logon")
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!--Admin Controls-->
+    @if (@Model.p.IsAdmin == true)
+    {
+        <div>
+            <table border="1">
+                <tr>
+                    <td>
+                        <b>Admin Controls</b><br />
+                        @Html.ActionLink("Set User Permissions", "Index")
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    }
+
+
+    <!--Search Bar-->
+    <div style="padding-top:50px;">
+        @using (Html.BeginForm("SelectBlog", "Home", new { id = "blog-form", pid = Model.p.Id }))
+        {
+            <label for="blog-select"><b>Search:</b></label>
+            <select id="blog-select" name="id" style="width:400px">
+                @foreach (Blog b in Model.blist)
+                {
+                    string selected = "";
+                    <option value="@b.Id" @selected>@b.Title</option>
+                }
+            </select>
+            <span id="submit-button-span">
+                <input type="submit" id="submit-button" value="View" />
+            </span>
+        }
+
+    </div>
+
+
+    <!--Selected Blog / Comments-->
+        @if (Model.SelectedBlog.Text != null)
+        {
+            // Selected Blog
+            <div align="center" style="padding-top:25px;">
+                <table border="1" style="width:50%;">
+                    <tr>
+                        <td>
+                            <div style=" text-align:left;  background-color:#0094ff">
+
+                                <b style="text-align:center;">@Model.SelectedBlog.Title</b><br />
+                                <span style="width:50%;">@Model.SelectedBlog.Text</span><br />
+                                @if(Model.SelectedBlog.OwnerID == Model.p.Id)
+                                { 
+                                    using (Html.BeginForm("DeleteBlog", "Home", new { pid = Model.p.Id, bid = Model.SelectedBlog.Id }))
+                                    {
+                                        <div align="right"><input type="submit" value="Delete" /></div>
+                                    }
+                                }
+                                
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            // Create Comment
+            using (Html.BeginForm("CreateComment", "Home", new {pid = Model.p.Id, bid = Model.SelectedBlog.Id}))
+            { 
+            <div style="margin-right:24.5%; " align ="right">
+                @Html.TextAreaFor(x => x.NewComment.Text, new { rows = 4, cols = 100, style = "max-width: 400px;" })
+                <br />
+                <input type="submit" value="Comment"/>
+            </div>
+            }
+            
+            
+            // Comments
+            foreach(Comment com in Model.clist)
+            { 
+                if(com.BlogID == Model.SelectedBlog.Id)
+                { 
+                    <div align="center"  style="padding-top:25px;">
+                        <table border="1" style="width:40%;">
+                            <tr>
+                                <td>
+                                    <div style=" text-align:left;  background-color:#00ffff">
+
+                                        <b style="text-align:center;">@com.Author</b><br />
+                                        <span style="width:50%;">@com.Text</span><br />
+                                        @if (com.OwnerID == Model.p.Id)
+                                        {
+                                            using (Html.BeginForm("DeleteComment", "Home", new { pid = Model.p.Id, cid = com.Id, bid = Model.SelectedBlog.Id }))
+                                            {
+                                                <div align="right"><input type="submit" value="Delete" /></div>
+                                            }
+                                        }
+                                
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                }
+            }
+
+        }
+
+
+    <br />
+
+    @if (Model.p.CanWriteArticles == true)
+    {
+
+        <!--New Blog-->
+        using (Html.BeginForm("CreateBlog", "Home", new {pid = Model.p.Id }))
+        { 
+        <div style="padding-top:50px;">
+            <b>Blog Title: </b>
+            @Html.EditorFor(x => x.NewBlog.Title, new { style = "max-width: 600px" })
+            <br />
+            @Html.TextAreaFor(x => x.NewBlog.Text, new { rows = 8, cols = 100, style = "max-width: 700px;" })
+            <br />
+            <input type="submit" value="Create" style="margin-left: 660px"/>
+        </div>
+        }
+        
+        
+        <!--Blog Posts-->
+            foreach (Blog b in Model.blist)
+            {
+                if (b.OwnerID == Model.p.Id)
+                {
+                    <div align="center" style="padding-top:25px;">
+                        <table border="1" style="width:50%;">
+                            <tr>
+                                <td>
+                                    <div style=" text-align:left;  background-color:#0094ff">
+
+                                        <b style="text-align:center;">@b.Title</b><br />
+                                        <span style="width:50%;">@b.Text</span><br />
+                                        @using (Html.BeginForm("DeleteBlog", "Home", new { pid = Model.p.Id, bid = b.Id}))
+                                        {
+                                            <div align="right"><input type="submit" value="Delete" /></div>
+                                        }
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                }
+            }
+    }
+    
+        
+       
+
+            
+        
+</body>
+</html>

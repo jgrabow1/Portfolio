@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @RenderBody()
+
+
+
+    <!-- Chat Stuff-->
+    <table border="0" style="position: fixed; bottom: 0.1%; right: 0%; text-align:left;">
+        <tr>
+
+            <!-- Chat Windows -->
+            @foreach (ChatInstance I in Model.InstanceList)
+            {
+                if (I.IsActive == true)
+                {
+                    <td valign="bottom">
+                        <div id="@I.Id" style="overflow:hidden; width: 300px; height: 400px; background-color: #3b3636;">
+                            <div onclick="Shift('@I.Id')" style="margin-left:10px; margin-top:10px; width:280px; height:40px; background-color:#808080;">
+                                <!-- Person Name -->
+                                <span style=" margin-top:10px; margin-left : 83px; font-size: 20px;">
+                                    <b>
+                                        @if (@Model.User.Id == I.User1ID)
+                                        {@I.User2}
+                                        else
+                                        {@I.User1}
+                                    </b>
+                                </span>
+                                <span style="float: right; margin-top: 7px; margin-right: 5px;">@Html.ActionLink("Hide", "CloseChatInstance", new { pid = @Model.User.Id, sh = @Model.CurrentPage, Iid = I.Id })</span>
+                            </div>
+                            <!--Message Container Area-->
+                            <div id="@I.Id@I.Id@I.Id" style="overflow:auto; margin-top: 10px; margin-left: 10px; width: 280px; height: 310px; background-color: #808080; ">
+
+                            </div>
+                            <!-- Text Area & Send-->
+                            <input type="text" id="@I.User1@I.Id" style="margin-left:10px; margin-top:5px; width:220px;" />
+                            <input type="submit" onclick="SendMessage('@I.Id','@I.User1')" value="Send" />
+
+                        </div>
+                    </td>
+                }
+            }
+
+            <!-- Friends Window -->
+            <td valign="bottom">
+                <div id="FriendWindow" style="overflow:hidden; width: 250px; height: 400px; background-color: #3b3636;">
+                    <div onclick="Shift('FriendWindow')" style="margin-left:10px; margin-top:10px; width:230px; height:40px; background-color:#808080;">
+                        <span style="position: absolute; margin-top:5px; margin-left : 83px; font-size: 20px;"><b>Friends</b></span>
+                    </div>
+                    <!--Friends Generate Area-->
+                    <div style=" overflow:auto; margin-top: 10px; margin-left: 10px; width: 230px; height: 310px; background-color: #808080; ">
+                        <div id="Friends">
+
+                        </div>
+                        <div id="Requests">
+
+                        </div>
+                    </div>
+
+                    @using (Html.BeginForm("AddFriend", "Home", new { pid = Model.User.Id, sh = Model.CurrentPage }))
+                    {
+                        @Html.TextBoxFor(x => x.UserSearch.Username, new { style = "margin-left:10px; margin-top:5px; width:180px;" })
+                        <input type="submit" value="Add" />
+                    }
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Friend Requests -->
+    <div style="position: absolute; float:left; text-align:left; width:175px; height:150px; background-color:#ff6a00">
+        <div id="testing" style="margin-left:10px; margin-top:10px; width:155px; height:130px; background-color:#808080">
+            <span id="requests"></span>
+            <span id="friends"></span>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+
+    // Send Chat Message
+    function SendMessage(frm, usr) {
+        var txt = String("" + usr + "" + frm);
+        //alert(txt);
+        var fw = document.getElementById(txt).value;
+        var Info = String("" + frm + ";" + '@Model.User.Id' + ";" + fw);
+
+        $.post(
+            '/Home/SendMessageTest',
+            Info,
+            String(frm)
+            );
+
+    }
+
+
+    var FwMaxHeight = 400;
+    var FwMinHeight = 60;
+    var UpControl = 0;
+    var DownControl = 0;
+    var MessagesControl = setInterval(function () { GetFriends(); }, 250);
+    var RequestControl = setInterval(function () { GetFriendRequest(); }, 250);
+    var RequestCount = 0;
+    var FriendCount = 0;
+    var MessageCount = new Array(10);
+
+
+
+
+
+
+
+    // Window Shift Graphics
+    function Shift(window) {
+
+
+        var fw = document.getElementById(window);
+
+        // Determine Shift Direction
+        if (fw.style.height == FwMaxHeight + "px") { DownControl = setInterval(function () { ShiftDown(window); }, 15); }
+        else if (fw.style.height == FwMinHeight + "px") { UpControl = setInterval(function () { ShiftUp(window); }, 15); }
+        else { clearInterval(DownControl); UpControl = setInterval(function () { ShiftUp(window); }, 15); }
+    }
+
+    function ShiftDown(window) {
+        var fw = document.getElementById(window);
+
+        var x = fw.style.height;
+        x = x.replace("px", "");
+        x -= 5;
+        fw.style.height = x + "px";
+
+        if (x == FwMinHeight) { clearInterval(DownControl); }
+
+    }
+
+    function ShiftUp(window) {
+        var fw = document.getElementById(window);
+
+        var x = fw.style.height;
+        x = x.replace("px", "");
+        x = +x; //cast as int
+        x += 5;
+        fw.style.height = x + "px";
+
+        if (x == FwMaxHeight) { clearInterval(UpControl); }
+    }
+
+
+
+
+    // Accept Friend Request
+    function AcceptFriendRequest(frID) {
+        var info = String("" + frID);
+        $.post(
+            '/Home/AcceptFriendRequest',
+            info,
+             function (data) {
+             });
+
+    }
+
+
+
+    // Refresh Functions
+    $(document).ready(function () {
+        // Get a refresh going for each chat instance
+
+        for(x=0;x<parseInt(@Model.InstanceList.Count) ; x++) {
+            for (y = 1; y < 20; y++) {
+                try {
+                    var fw = document.getElementById(y);
+                    var tst = fw.style.height;
+                    fw.style.height = fw.style.height;
+                    //alert(Instances[y]);
+                    //alert("y = "+y);
+                    SetRefresh(y);
+                } catch (err) { }
+            }
+        }
+    });
+
+
+    function SetRefresh(val) {
+        setInterval(function () { Refresh(val); }, 250);
+    }
+
+
+
+    // Chat Refresh
+    function Refresh(Iid) {
+        var ID = String("#" + Iid + "" + Iid + "" + Iid);
+        //alert(" ID = ("+ID+")");
+        $.post(
+            '/Home/GetMessages',
+            String(Iid),
+            function (data) {
+                var index;
+
+                // Get the Instance message count
+                var i = 0;
+                //for (z = 0; z < 10; z++) { if (MessageCount[z][0] == Iid) { i = z; } }
+
+                if (data.length > 0){// && data.length != MessageCount[i][1]) {
+                    //MessageCount[i][1] = 0;
+                    $(ID).html("");
+                    for (index in data) {
+                        //MessageCount[i][1] += 1;
+                        if (data[index].AuthorUsername == '@Model.User.Username') {
+                            $(ID).html(
+                                $(ID).html() + "<div style=' background-color: #0026ff; margin-top:5px; '><span><b><i>" + data[index].AuthorUsername + "</i></b></span><span style='float:right; font-size:9px;'>" + data[index].Date + "</span><br>" + data[index].Text + "</div>"
+                                )
+                        } else {
+                            $(ID).html(
+                                $(ID).html() + "<div style=' background-color: #ff0000; margin-top:5px; '><span><b><i>" + data[index].AuthorUsername + "</i></b></span><span style='float:right; font-size:9px;'>" + data[index].Date + "</span><br>" + data[index].Text + "</div>"
+                                )
+                        }
+                    }
+                }
+            });
+
+        // Scroll to bottom
+        var cont = String("#" + Iid + "" + Iid + "" + Iid);
+        //alert(cont);
+        $(cont).animate({
+            scrollTop: $(cont).prop("scrollHeight")
+        }, 0
+            );
+
+    }
+
+
+
+    // Get any new friend requests
+    function GetFriendRequest() {
+        var ID = String("#Requests");
+        //alert(" ID = ("+ID+")");
+        $.post(
+            '/Home/GetFriendRequest',
+            '@Model.User.Id',
+            function (data) {
+                var index;
+
+                // TESTING
+                $("#requests").html("<span> Request Count = " + RequestCount + "</span>")
+                // TESTING
+
+                if (data.length != RequestCount) {
+
+                    $(ID).html("");
+                    RequestCount = 0;
+
+                    for (index in data) {
+                        RequestCount += 1;
+                        if (data[index].FriendID == '@Model.User.Id') {
+                            $(ID).html(
+                            $(ID).html() +
+                            "<div style=' background-color: #ff6a00; margin-top:5px; '><span><b><i> " + data[index].UserUsername + "</i></b> (Request)</span><input type='submit' value='Accept' onclick='AcceptFriendRequest(" + data[index].Id + ")' style='margin-top: 0px; margin-bottom:0px; float: right;' /></div>"
+                            )
+                        } else if (data[index].UserUsername == '@Model.User.Username') {
+                            $(ID).html(
+                            $(ID).html() + "<div style=' background-color: #00ff21; margin-top:5px; '><span><b><i> " + data[index].FriendUsername + "</i></b> (Pending)</span></div>"
+                            )
+                        }
+                    }
+                    //RefreshFriendsList();
+                }
+            });
+
+    }
+
+
+
+
+
+
+
+
+        // Refresh Friends List
+        function GetFriends() {
+
+            $.post(
+                '/Home/GetFriends',
+                '@Model.User.Id',
+                function (data) {
+                    var index;
+
+                    $("#friends").html("<span> Friend Count = " + FriendCount + "</span>")
+
+                    if (data.length != FriendCount) {
+
+                        $("#Friends").html("");
+                        FriendCount = 0;
+
+                        for (index in data) {
+                            FriendCount += 1;
+
+                            if (data[index].FriendID == '@Model.User.Id') {
+
+                                var txt1 = "<span style='margin-left:5px; margin-top:10px; display:inline-block;'>";
+                                var txt3 = "</span><input type='submit' value='Home' style='margin-top: 8px; margin-bottom:0px; float: right;' /><br />";
+
+                                var x1 = data[index].UserUsername;
+                                var x2 = +data[index].FriendID;
+                                var x5 = +'@Model.CurrentPage';
+                                var x3 = data[index].UserID;
+                                var x4 = data[index].UserUsername;
+                                var txt2 = '@Html.ActionLink("X1", "CreateChat", new {pid = "X2", sh = "X5", fid = "X3", fname = "X4" })'
+                                txt2 = txt2.replace("X1", x1);
+                                txt2 = txt2.replace("X2", x2);
+                                txt2 = txt2.replace("X5", x5);
+                                txt2 = txt2.replace("X3", x3);
+                                txt2 = txt2.replace("X4", x4);
+                                $("#Friends").html($("#Friends").html() + txt1 + txt2 + txt3);
+
+
+                            } else if (data[index].UserID == '@Model.User.Id') {
+
+                                var txt1 = "<span style='margin-left:5px; margin-top:10px; display:inline-block;'>";
+                                var txt3 = "</span><input type='submit' value='Home' style='margin-top: 8px; margin-bottom:0px; float: right;' /><br />";
+
+                                var x1 = data[index].FriendUsername;
+                                var x2 = +data[index].UserID;
+                                var x5 = +'@Model.CurrentPage';
+                                var x3 = data[index].FriendID;
+                                var x4 = data[index].FriendUsername;
+                                var txt2 = '@Html.ActionLink("X1", "CreateChat", new {pid = "X2", sh = "X5", fid = "X3", fname = "X4" })'
+                                txt2 = txt2.replace("X1", x1);
+                                txt2 = txt2.replace("X2", x2);
+                                txt2 = txt2.replace("X5", x5);
+                                txt2 = txt2.replace("X3", x3);
+                                txt2 = txt2.replace("X4", x4);
+                                $("#Friends").html($("#Friends").html() + txt1 + txt2 + txt3);
+
+                            }
+                        }
+                        //RefreshFriendsList();
+                    }
+                });
+
+        }
+
+    </script>
+
+
+</body>
+</html>
+
